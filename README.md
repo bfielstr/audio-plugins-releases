@@ -1,7 +1,7 @@
-# Audio plug-ins: smemplr, multidyn, locus, stretchr, smacheratr, para, widr, wubr, levlr, deepr, smoothr, gentlr, dropr, orbitr, ciphr, moistr, smeezr, probr
+# Audio plug-ins: smemplr, multidyn, locus, stretchr, smacheratr, para, widr, wubr, levlr, deepr, smoothr, gentlr, dropr, orbitr, ciphr, moistr, smeezr, probr, sweepr, tapr
 
 VST3 plug-ins for REAPER, Ableton Live and any other VST3 host on **macOS, Windows and Linux**. Free
-to use, not for sale (see [LICENSE](LICENSE)). The current version is **0.30.1**.
+to use, not for sale (see [LICENSE](LICENSE)). The current version is **0.31.0**.
 
 | Plug-in | What it does for you |
 |---|---|
@@ -23,6 +23,8 @@ to use, not for sale (see [LICENSE](LICENSE)). The current version is **0.30.1**
 | **moistr** | Turns a dry bass (a detuned saw or a Reese, typically) into a wet, moving neuro texture: eight bell EQs sweep the low end against each other like rolling waves, and a level-matched saturator makes it crunch with a clean sub kept underneath (a resonant high shelf on a slow orbit is there too). After that it can split the sound into 3 or 4 moving bands: the low band held steady, the bands above it rising and falling on a seeded pattern, glued back with a compressor and a little grit, with an optional frequency shifter that never touches the sub. |
 | **smeezr** | A one-knob compressor. Turning up Squeeze first pulls every octave towards the balance of pink noise (dull sounds get brighter, harsh ones darker, the loudness stays), then past the middle adds an OTT-style boost on top: quiet details up, peaks down, most squashed at 100 %. At 0 it does nothing. |
 | **probr** | An analysis probe. Put one after each device or rack chain you want to understand, label each, arm them and play: each writes exactly what passes through it (the sound itself is untouched) with the song position, the tempo and any MIDI, into one folder per session on your computer. A script lines all the probes up by beat and compares what each stage of your chain does. |
+| **sweepr** | Two EQ bands whose frequencies an LFO each sweeps, synced to the song or free, into a tape stage: drive into a fast leveller and a clipper, and highs that soften as the tape speed comes down. A boost and a cut moving against a bass in time with the beat, with the movement shown on the EQ curve. |
+| **tapr** | A tape saturator: drive into a fast leveller and a clipper that holds the level, highs that soften as the tape speed comes down, and a three-band Cut EQ. The leveller and the EQ each go before or after the saturation. sweepr's tape stage on its own. |
 
 ## Install
 
