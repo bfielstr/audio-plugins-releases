@@ -1,30 +1,23 @@
-# Audio plug-ins: smemplr, multidyn, locus, stretchr, smacheratr, para, widr, wubr, levlr, deepr, smoothr, gentlr, dropr, orbitr, ciphr, moistr, smeezr, probr, sweepr, tapr
+# Audio plug-ins: smemplr, multidyn, smacheratr, para, widr, gentlr, dropr, moistr, probr, sweepr, tapr, pinchr, bubr
 
 VST3 plug-ins for REAPER, Ableton Live and any other VST3 host on **macOS, Windows and Linux**. Free
-to use, not for sale (see [LICENSE](LICENSE)). The current version is **0.31.0**.
+to use, not for sale (see [LICENSE](LICENSE)). The current version is **0.32.0**.
 
 | Plug-in | What it does for you |
 |---|---|
 | **smemplr** | Plays a sample from the keyboard. Loop it, slice it into hits, or warp it to the song tempo. A multi-mode filter, envelopes you can draw, an LFO, four modulation LFOs you drag onto any control, and an effects rack with up to 8 of the suite's effects in any order. |
 | **multidyn** | Squashes or opens up 1 to 4 frequency bands at once: quiet detail comes up and loud parts are held down, band by band. The **OTT** style gives the loud, dense, over-the-top sound; **Character** is smoother. Side-chain input and a Sub band. |
-| **locus** | Cleans up or thickens the low end. Positive Contrast brings the main bass notes forward and pushes the mud between them down; negative Contrast evens the low end out for weight. |
-| **stretchr** | Changes the pitch and timing of a clip recorded on a track: 8 algorithms, stretch markers, a drawn pitch envelope and formant control. Bounce the result in place or drag it to a track. |
 | **smacheratr** | Adds warmth, grit or hard clipping. A pre-limiter stops transients from clipping harder than the rest, colour filters choose which frequencies saturate, and gentlr keeps a pushed sound from turning muddy or harsh. |
 | **para** | A high-pass and a low-pass side by side. Pull them apart to carve a notch, then sweep it, fire it from MIDI notes, or use the **Vocal** movement, where the filter you move leads and fades the other out. Good for bass movement and filter sweeps. |
 | **widr** | Makes a part very wide without falling apart in mono. Widrs in the same project share out the stereo field by role, so they do not all widen the same place. |
-| **wubr** | Two EQ bands whose level and frequency follow shapes you draw: wubs, pumps and sweeps, synced to the song or free, or fired once by MIDI or by hits in the audio. |
-| **levlr** | Splits the sound into up to 4 bands and gives each a level and a saturator (Analog, Tape, Tube, Hard Clip, Fold). Lift the lows, dip the low mids, dirty up only the highs. |
-| **deepr** | Makes a bass sound deeper without making it louder: dips the low mids only while the sub plays, and folds the sub to mono. No latency of its own. |
-| **smoothr** | A loudness limiter for the master or a bus that keeps the low end clean: the lows get a slow, smooth gain and the highs catch the fast peaks. True-peak ceiling and a scrolling gain-reduction history. |
 | **gentlr** | Keeps a mix clear by turning down mud and harshness only while they build up. Two bands plus a Sub and a High band, each cutting its region only while it is loud. |
 | **dropr** | Slams a sound flat in 6 bands and drives it into a saturator. Negative ratios turn loud hits down below quieter parts, so a snare's body comes up and its snap is tamed. |
-| **orbitr** | Turns a sound into a swarm: 1 to 16 copies fly around you, each one bending in pitch as it moves towards or away from you. |
-| **ciphr** | An 8-voice synthesizer: clusters of wavetable oscillators you sweep with one knob, FM and ring modulation between them, and echoes that turn into reverb, with a frequency shifter in the feedback for endlessly climbing repeats. Metallic, screeching and vocal waves for alien textures, and Disperse, a dial that brings the sound back band by band. Can also play a track through its side-chain input. |
 | **moistr** | Turns a dry bass (a detuned saw or a Reese, typically) into a wet, moving neuro texture: eight bell EQs sweep the low end against each other like rolling waves, and a level-matched saturator makes it crunch with a clean sub kept underneath (a resonant high shelf on a slow orbit is there too). After that it can split the sound into 3 or 4 moving bands: the low band held steady, the bands above it rising and falling on a seeded pattern, glued back with a compressor and a little grit, with an optional frequency shifter that never touches the sub. |
-| **smeezr** | A one-knob compressor. Turning up Squeeze first pulls every octave towards the balance of pink noise (dull sounds get brighter, harsh ones darker, the loudness stays), then past the middle adds an OTT-style boost on top: quiet details up, peaks down, most squashed at 100 %. At 0 it does nothing. |
 | **probr** | An analysis probe. Put one after each device or rack chain you want to understand, label each, arm them and play: each writes exactly what passes through it (the sound itself is untouched) with the song position, the tempo and any MIDI, into one folder per session on your computer. A script lines all the probes up by beat and compares what each stage of your chain does. |
 | **sweepr** | Two EQ bands whose frequencies an LFO each sweeps, synced to the song or free, into a tape stage: drive into a fast leveller and a clipper, and highs that soften as the tape speed comes down. A boost and a cut moving against a bass in time with the beat, with the movement shown on the EQ curve. |
 | **tapr** | A tape saturator: drive into a fast leveller and a clipper that holds the level, highs that soften as the tape speed comes down, and a three-band Cut EQ. The leveller and the EQ each go before or after the saturation. sweepr's tape stage on its own. |
+| **pinchr** | A germanium compressor: a FET compressor with six knees, from a soft resistor to a hard Zener, into a germanium output stage whose Feedback adds gain and a resonant bass bump. Mix blends the compressed and the uncompressed sound, both through that stage. |
+| **bubr** | A bass enhancer: a band at a frequency you tune (20 to 125 Hz), its focus set by Q-Factor, driven into a clipper (Intensity, Drive, Boost) and blended back with the dry sound, a gate keeping it to the louder parts, Low Cut, and a 0 dBFS limiter at the output. Measured setting by setting from a commercial bass enhancer, as a 1:1 model to start from. |
 
 ## Install
 
@@ -76,7 +69,7 @@ VST3 folder (e.g. `~/Library/Audio/Plug-Ins/VST3/bfielstr/`). Running a script a
 installed versions. Copies that older installers put directly in the VST3 folder, and bundles under the
 older names above, are removed. Only ours are touched: the vendor in the bundle is checked.
 
-Options (environment variables): `SIMPLR_PLUGINS="Multidyn Locus"` installs only some plug-ins,
+Options (environment variables): `SIMPLR_PLUGINS="Multidyn Tapr"` installs only some plug-ins,
 `SIMPLR_VERSION=v0.25.0` picks a release, `SIMPLR_DEST=...` chooses the VST3 folder.
 
 ### Install by hand
